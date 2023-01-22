@@ -11,6 +11,20 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.9.0"
+    "@astrojs/react": "^1.2.2",
+    "@vanilla-extract/sprinkles": "^1.5.1",
+    "astro": "^1.0.0",
+    "astro-icon": "^0.8.0",
+    "astro-vanilla-extract": "^1.2.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "eslint": "^8.32.0",
+    "eslint-config-next": "^13.1.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^9.0.0",
+    "prettier": "^2.8.3"
   }
 }
