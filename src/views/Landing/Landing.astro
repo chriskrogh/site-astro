@@ -1,0 +1,72 @@
+---
+import { Icon } from "astro-icon";
+import { style } from "@vanilla-extract/css";
+import Layout from "../../layouts/Layout.astro";
+
+import { sprinkles } from "../../styles/sprinkles.css";
+
+import {
+  contactContainer,
+  container,
+  descriptionText,
+  footerText,
+  icon,
+  linkText,
+  profilePicture,
+} from "./Landing.css";
+
+const IMAGE_SIZE = 320;
+---
+
+<Layout title="Chris Krogh">
+  <div class={container}>
+    <!-- Profile Pic -->
+    <img
+      class={profilePicture}
+      src="/assets/pro_pic.png"
+      width={IMAGE_SIZE}
+      height={IMAGE_SIZE}
+      alt="Chris Krogh"
+    />
+    <div class={sprinkles({ height: "3x" })}></div>
+
+    <!-- Intro -->
+    <h1>Hi there!</h1>
+    <div class={sprinkles({ height: "3x" })}></div>
+    <p class={descriptionText}>
+      My name is Chris and I like building cool things.
+    </p>
+    <div class={sprinkles({ height: "3x" })}></div>
+
+    <!-- Contact Info -->
+    <div class={contactContainer}>
+      <a href="https://twitter.com/chriskrogh_">
+        <Icon name="mdi:twitter" class={icon} />
+      </a>
+      <div class={sprinkles({ width: "2x" })}></div>
+      <a href="https://www.linkedin.com/in/christopherkrogh/">
+        <Icon name="mdi:linkedin" class={icon} />
+      </a>
+      <div class={sprinkles({ width: "2x" })}></div>
+      <a href="https://github.com/chriskrogh">
+        <Icon name="mdi:github" class={icon} />
+      </a>
+      <div class={sprinkles({ width: "2x" })}></div>
+      <a href="mailto:chris.krogh@outlook.com">
+        <Icon name="mdi:email" class={icon} />
+      </a>
+    </div>
+    <div class={sprinkles({ height: "4x" })}></div>
+
+    <!-- Resume -->
+    <a class={linkText} href="/resume">
+      <p>What I've worked on</p>
+    </a>
+    <div class={sprinkles({ height: "5x" })}></div>
+
+    <!-- Footer -->
+    <p class={footerText}>Built with Astro 🚀 and Vanilla Extract 🧁</p>
+    <div class={sprinkles({ height: "1x" })}></div>
+    <p class={footerText}>Hosted on Vercel ▲</p>
+  </div>
+</Layout>
