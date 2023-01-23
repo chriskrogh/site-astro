@@ -25,6 +25,8 @@ const responsiveProperties = defineProperties({
 
     width: { ...space, ...fullWithoutPadding },
     height: { ...space, ...fullWithoutPadding },
+    minWidth: { ...space, ...fullWithoutPadding },
+    minHeight: { ...space, ...fullWithoutPadding },
 
     paddingTop: space,
     paddingBottom: space,
@@ -35,6 +37,11 @@ const responsiveProperties = defineProperties({
     marginBottom: space,
     marginLeft: space,
     marginRight: space,
+
+    top: space,
+    bottom: space,
+    left: space,
+    right: space,
   },
   shorthands: {
     size: ["width", "height"],

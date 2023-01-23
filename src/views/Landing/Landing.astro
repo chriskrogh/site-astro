@@ -1,21 +1,19 @@
 ---
 import { Icon } from "astro-icon";
-import { style } from "@vanilla-extract/css";
 import Layout from "../../layouts/Layout.astro";
 
 import { sprinkles } from "../../styles/sprinkles.css";
 
 import {
+  CONTENT_SIZE,
   contactContainer,
   container,
   descriptionText,
-  footerText,
   icon,
   linkText,
   profilePicture,
+  spotifyCard,
 } from "./Landing.css";
-
-const IMAGE_SIZE = 320;
 ---
 
 <Layout title="Chris Krogh">
@@ -24,19 +22,19 @@ const IMAGE_SIZE = 320;
     <img
       class={profilePicture}
       src="/assets/pro_pic.png"
-      width={IMAGE_SIZE}
-      height={IMAGE_SIZE}
+      width={CONTENT_SIZE}
+      height={CONTENT_SIZE}
       alt="Chris Krogh"
     />
-    <div class={sprinkles({ height: "3x" })}></div>
+    <div class={sprinkles({ minHeight: "3x" })}></div>
 
     <!-- Intro -->
     <h1>Hi there!</h1>
-    <div class={sprinkles({ height: "3x" })}></div>
+    <div class={sprinkles({ minHeight: "3x" })}></div>
     <p class={descriptionText}>
       My name is Chris and I like building cool things.
     </p>
-    <div class={sprinkles({ height: "3x" })}></div>
+    <div class={sprinkles({ minHeight: "3x" })}></div>
 
     <!-- Contact Info -->
     <div class={contactContainer}>
@@ -55,18 +53,31 @@ const IMAGE_SIZE = 320;
       <a href="mailto:chris.krogh@outlook.com">
         <Icon name="mdi:email" class={icon} />
       </a>
+      <div class={sprinkles({ width: "2x" })}></div>
+      <a href="https://vsco.co/chriskrogh-/gallery">
+        <Icon name="simple-icons:vsco" class={icon} />
+      </a>
     </div>
-    <div class={sprinkles({ height: "4x" })}></div>
+    <div class={sprinkles({ minHeight: "5x" })}></div>
 
-    <!-- Resume -->
-    <a class={linkText} href="/resume">
-      <p>What I've worked on</p>
+    <!-- Work -->
+    <a class={linkText} href="/work">
+      <p>What I'm working on</p>
     </a>
-    <div class={sprinkles({ height: "5x" })}></div>
+    <div class={sprinkles({ minHeight: "5x" })}></div>
 
-    <!-- Footer -->
-    <p class={footerText}>Built with Astro 🚀 and Vanilla Extract 🧁</p>
-    <div class={sprinkles({ height: "1x" })}></div>
-    <p class={footerText}>Hosted on Vercel ▲</p>
+    <!-- Music -->
+    <p>Currently on repeat</p>
+    <div class={sprinkles({ minHeight: "2x" })}></div>
+    <div class={spotifyCard}>
+      <iframe
+        style="border-radius:12px"
+        src="https://open.spotify.com/embed/playlist/7IH26z52TBOkQY4XDx66KI?utm_source=generator&theme=0"
+        width={CONTENT_SIZE}
+        height="80"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"></iframe>
+    </div>
   </div>
 </Layout>

@@ -12,15 +12,19 @@ const containerSize: Sprinkles["width"] = {
   desktop: `full-2*${containerPadding.desktop ?? "1x"}`,
 };
 
-export const container = sprinkles({
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-
-  padding: containerPadding,
-  width: containerSize,
-  height: containerSize,
-});
+export const container = style([
+  sprinkles({
+    padding: containerPadding,
+    width: containerSize,
+    height: containerSize,
+  }),
+  {
+    overflowY: "auto",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+]);
 
 export const profilePicture = style({
   borderRadius: "50%",
@@ -86,9 +90,9 @@ export const linkText = style([
   hover,
 ]);
 
-export const footerText = sprinkles({
-  color: {
-    lightMode: "notBlack",
-    darkMode: "offWhite",
-  },
+export const CONTENT_SIZE = 340;
+
+export const spotifyCard = style({
+  width: CONTENT_SIZE,
+  height: 80,
 });

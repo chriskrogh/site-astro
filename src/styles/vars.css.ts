@@ -7,6 +7,8 @@ export const space = {
   ["6x"]: "48px",
   ["7x"]: "56px",
   ["8x"]: "64px",
+  ["9x"]: "72px",
+  ["10x"]: "80px",
 };
 
 export const fullWithoutPadding = {
@@ -18,6 +20,8 @@ export const fullWithoutPadding = {
   ["full-2*6x"]: "calc(100% - 96px)",
   ["full-2*7x"]: "calc(100% - 112px)",
   ["full-2*8x"]: "calc(100% - 128px)",
+  ["full-2*9x"]: "calc(100% - 144px)",
+  ["full-2*10x"]: "calc(100% - 160px)",
 };
 
 export const colors = {
