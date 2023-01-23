@@ -38,23 +38,26 @@ import {
 
     <!-- Contact Info -->
     <div class={contactContainer}>
-      <a href="https://twitter.com/chriskrogh_">
+      <a href="https://twitter.com/chriskrogh_" aria-label="Twitter">
         <Icon name="mdi:twitter" class={icon} />
       </a>
       <div class={sprinkles({ width: "2x" })}></div>
-      <a href="https://www.linkedin.com/in/christopherkrogh/">
+      <a
+        href="https://www.linkedin.com/in/christopherkrogh/"
+        aria-label="LinkedIn"
+      >
         <Icon name="mdi:linkedin" class={icon} />
       </a>
       <div class={sprinkles({ width: "2x" })}></div>
-      <a href="https://github.com/chriskrogh">
+      <a href="https://github.com/chriskrogh" aria-label="GitHub">
         <Icon name="mdi:github" class={icon} />
       </a>
       <div class={sprinkles({ width: "2x" })}></div>
-      <a href="mailto:chris.krogh@outlook.com">
+      <a href="mailto:chris.krogh@outlook.com" aria-label="Email">
         <Icon name="mdi:email" class={icon} />
       </a>
       <div class={sprinkles({ width: "2x" })}></div>
-      <a href="https://vsco.co/chriskrogh-/gallery">
+      <a href="https://vsco.co/chriskrogh-/gallery" aria-label="VSCO">
         <Icon name="simple-icons:vsco" class={icon} />
       </a>
     </div>
@@ -71,6 +74,7 @@ import {
     <div class={sprinkles({ minHeight: "2x" })}></div>
     <div class={spotifyCard}>
       <iframe
+        title="Spotify"
         style="border-radius:12px"
         src="https://open.spotify.com/embed/playlist/7IH26z52TBOkQY4XDx66KI?utm_source=generator&theme=0"
         width={CONTENT_SIZE}
