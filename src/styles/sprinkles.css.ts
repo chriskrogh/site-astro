@@ -2,18 +2,33 @@ import { createSprinkles, defineProperties } from "@vanilla-extract/sprinkles";
 
 import { colors, fullWithoutPadding, space } from "./vars.css";
 
+export const MIN_WIDTH_BREAKPOINTS = {
+  mobile: 0,
+  tablet: 768,
+  desktop: 1024,
+  xlDesktop: 1440,
+} as const;
+
+export const RESPONSIVE_MEDIA_QUERIES = {
+  mobile: `screen and (min-width: ${MIN_WIDTH_BREAKPOINTS.mobile}px)`,
+  tablet: `screen and (min-width: ${MIN_WIDTH_BREAKPOINTS.tablet}px)`,
+  desktop: `screen and (min-width: ${MIN_WIDTH_BREAKPOINTS.desktop}px)`,
+  xlDesktop: `screen and (min-width: ${MIN_WIDTH_BREAKPOINTS.xlDesktop}px)`,
+} as const;
+
 const responsiveProperties = defineProperties({
   conditions: {
     mobile: {},
-    tablet: { "@media": "screen and (min-width: 768px)" },
-    desktop: { "@media": "screen and (min-width: 1024px)" },
-    xlDesktop: { "@media": "screen and (min-width: 1440px)" },
+    tablet: { "@media": RESPONSIVE_MEDIA_QUERIES.tablet },
+    desktop: { "@media": RESPONSIVE_MEDIA_QUERIES.desktop },
+    xlDesktop: { "@media": RESPONSIVE_MEDIA_QUERIES.xlDesktop },
   },
   defaultCondition: "mobile",
   properties: {
     display: ["none", "flex", "block", "inline"],
     flexDirection: ["row", "column"],
     justifyContent: [
+      "normal",
       "stretch",
       "flex-start",
       "center",
@@ -21,7 +36,7 @@ const responsiveProperties = defineProperties({
       "space-around",
       "space-between",
     ],
-    alignItems: ["stretch", "flex-start", "center", "flex-end"],
+    alignItems: ["normal", "stretch", "flex-start", "center", "flex-end"],
 
     width: { ...space, ...fullWithoutPadding },
     height: { ...space, ...fullWithoutPadding },

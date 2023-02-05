@@ -1,6 +1,10 @@
 import { style } from "@vanilla-extract/css";
 
-import { Sprinkles, sprinkles } from "../../styles/sprinkles.css";
+import {
+  RESPONSIVE_MEDIA_QUERIES,
+  Sprinkles,
+  sprinkles,
+} from "../../styles/sprinkles.css";
 
 const containerPadding: Sprinkles["padding"] = {
   mobile: "2x",
@@ -26,8 +30,31 @@ export const container = style([
   },
 ]);
 
+export const heroContainer = style([
+  sprinkles({
+    display: "flex",
+    flexDirection: {
+      mobile: "column",
+      tablet: "row",
+    },
+    alignItems: "center",
+    justifyContent: "center",
+  }),
+]);
+
 export const profilePicture = style({
   borderRadius: "50%",
+});
+
+export const titleText = style({
+  "@media": {
+    [RESPONSIVE_MEDIA_QUERIES.mobile]: {
+      textAlign: "center",
+    },
+    [RESPONSIVE_MEDIA_QUERIES.tablet]: {
+      textAlign: "left",
+    },
+  },
 });
 
 export const descriptionText = style({
@@ -37,6 +64,22 @@ export const descriptionText = style({
 export const contactContainer = style({
   display: "flex",
   flexDirection: "row",
+  "@media": {
+    [RESPONSIVE_MEDIA_QUERIES.mobile]: {
+      justifyContent: "center",
+    },
+    [RESPONSIVE_MEDIA_QUERIES.tablet]: {
+      justifyContent: "normal",
+    },
+  },
+});
+
+export const workWrapper = sprinkles({
+  display: "flex",
+  justifyContent: {
+    mobile: "center",
+    tablet: "normal",
+  },
 });
 
 const hover = style({
