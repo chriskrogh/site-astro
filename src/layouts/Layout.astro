@@ -23,10 +23,21 @@ const { title } = Astro.props;
     />
     <title>{title}</title>
   </head>
+  <script
+    type="text/partytown"
+    src="https://www.googletagmanager.com/gtag/js?id=G-HLZV2H5RD1"
+  ></script>
+  <script type="text/partytown">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-HLZV2H5RD1");
+  </script>
   <body>
     <main class={container}>
       <slot />
-
       <!-- Footer -->
       <div class={footer}>
         <p class={footerText}>Built with Astro 🚀 and Vanilla Extract 🧁</p>

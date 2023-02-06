@@ -11,6 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/partytown": "^1.0.3",
     "@astrojs/react": "^1.2.2",
     "@vanilla-extract/sprinkles": "^1.5.1",
     "astro": "^1.0.0",
