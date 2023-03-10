@@ -1,0 +1,26 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+import * as styles from "./ExperienceCard.css";
+
+export type Props = {
+  data: CollectionEntry<"experiences">["data"];
+  slug: CollectionEntry<"experiences">["slug"];
+};
+
+const { data, slug } = Astro.props;
+const { title, positions, image } = data;
+
+const mostRecentPosition = positions.sort(
+  (a, b) =>
+    new Date(b.duration.start).getTime() - new Date(a.duration.start).getTime(),
+)[0];
+---
+
+<a class={styles.container} href={`/work/experiences/${slug}`}>
+  <img class={styles.image} src={image} alt={`${title} logo`} />
+  <div class={styles.infoContainer}>
+    <h4>{title}</h4>
+    <p>{mostRecentPosition.title}</p>
+  </div>
+</a>
