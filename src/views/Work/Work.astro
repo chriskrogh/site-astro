@@ -19,8 +19,6 @@ const experiences = (await getCollection("experiences")).sort((a, b) => {
 
 <Layout title="Chris' Work">
   <div class={styles.container}>
-    <div class={styles.contentContainer}>
-      {experiences.map((experience) => <ExperienceCard {...experience} />)}
-    </div>
+    {experiences.map((experience) => <ExperienceCard {...experience} />)}
   </div>
 </Layout>

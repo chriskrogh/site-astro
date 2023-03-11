@@ -2,7 +2,7 @@ import "../styles/global.css";
 
 import { style } from "@vanilla-extract/css";
 
-import { sprinkles } from "../styles/sprinkles.css";
+import { Sprinkles, sprinkles } from "../styles/sprinkles.css";
 
 const FOOTER_HEIGHT = 100;
 
@@ -19,6 +19,30 @@ export const container = style([
     height: "auto",
     minHeight: `calc(100% - ${FOOTER_HEIGHT}px)`,
     paddingBottom: FOOTER_HEIGHT,
+  },
+]);
+
+const contentContainerPadding: Sprinkles["padding"] = {
+  mobile: "2x",
+  desktop: "5x",
+};
+
+const contentContainerSize: Sprinkles["width"] = {
+  mobile: `full-2*${contentContainerPadding.mobile ?? "1x"}`,
+  desktop: `full-2*${contentContainerPadding.desktop ?? "1x"}`,
+};
+
+export const contentContainer = style([
+  sprinkles({
+    padding: contentContainerPadding,
+    width: contentContainerSize,
+    height: contentContainerSize,
+  }),
+  {
+    overflowY: "auto",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
 ]);
 
