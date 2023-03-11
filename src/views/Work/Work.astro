@@ -8,11 +8,13 @@ import { getMostRecentPosition } from "./utils";
 import * as styles from "./Work.css";
 
 const experiences = (await getCollection("experiences")).sort((a, b) => {
-  const aMostRecentPosition = getMostRecentPosition(a.data.positions);
-  const bMostRecentPosition = getMostRecentPosition(b.data.positions);
+  const aMostRecentPositionEndDate =
+    getMostRecentPosition(a.data.positions).duration.end ?? Date.now();
+  const bMostRecentPositionEndDate =
+    getMostRecentPosition(b.data.positions).duration.end ?? Date.now();
   return (
-    new Date(bMostRecentPosition.duration.start).getTime() -
-    new Date(aMostRecentPosition.duration.start).getTime()
+    new Date(bMostRecentPositionEndDate).getTime() -
+    new Date(aMostRecentPositionEndDate).getTime()
   );
 });
 ---

@@ -9,11 +9,12 @@ export type Props = {
 };
 
 const { data, slug } = Astro.props;
-const { title, positions, image } = data;
+const { title, positions, image, location } = data;
 
 const mostRecentPosition = positions.sort(
   (a, b) =>
-    new Date(b.duration.start).getTime() - new Date(a.duration.start).getTime(),
+    new Date(b.duration.end ?? Date.now()).getTime() -
+    new Date(a.duration.end ?? Date.now()).getTime(),
 )[0];
 ---
 
@@ -22,5 +23,6 @@ const mostRecentPosition = positions.sort(
   <div class={styles.infoContainer}>
     <h4>{title}</h4>
     <p>{mostRecentPosition.title}</p>
+    <p>{location}</p>
   </div>
 </a>
