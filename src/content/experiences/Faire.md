@@ -2,6 +2,7 @@
 title: Faire
 image: /assets/tiles/Faire.png
 link: https://www.faire.com/
+location: Toronto, ON
 positions:
   - title: "Frontend Engineer"
     achievements:

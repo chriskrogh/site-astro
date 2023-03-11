@@ -2,6 +2,7 @@
 title: "Zed Labs"
 image: /assets/tiles/Zed.png
 link: https://www.zed.io/
+location: Port of Spain, TT
 positions:
   - title: "Technical Advisor"
     achievements:

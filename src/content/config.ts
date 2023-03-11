@@ -5,6 +5,7 @@ const experiences = defineCollection({
     title: z.string(),
     image: z.string(),
     link: z.string(),
+    location: z.string(),
     positions: z.array(
       z.object({
         title: z.string(),

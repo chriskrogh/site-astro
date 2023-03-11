@@ -2,6 +2,7 @@
 title: "Manulife Financial"
 image: /assets/tiles/Manulife.png
 link: https://www.manulife.com/
+location: Waterloo, ON
 positions:
   - title: "Full Stack Engineer Co-Op"
     achievements:

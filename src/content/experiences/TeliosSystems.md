@@ -2,6 +2,7 @@
 title: "Telios Systems"
 image: /assets/tiles/Teleios.png
 link: https://www.teleios-systems.com/
+location: Port of Spain, TT
 positions:
   - title: "Software Developer Intern"
     achievements:

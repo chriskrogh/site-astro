@@ -2,6 +2,7 @@
 title: "Webveloper"
 image: /assets/tiles/Webveloper.png
 link: https://webveloper.com/
+location: Remote
 positions:
   - title: "Software Engineer Co-Op"
     achievements:

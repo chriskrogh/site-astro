@@ -2,6 +2,7 @@
 title: "Intuit"
 image: /assets/tiles/Intuit.png
 link: https://intuit.com/
+location: Mississauga, ON
 positions:
   - title: "Software Engineer Co-Op"
     achievements:
