@@ -10,8 +10,8 @@ positions:
       - "Reduced TurboTax build time by 45% by parallelizing Typescript compilation with Gulp, saving teammates 40 hours/year."
       - "Automated large manual tasks like regression test script conversion using Replay and VM deployment using PowerShell."
     duration:
-      start: "2020-04-26"
-      end: "2022-08-31"
+      start: "2019-09-02"
+      end: "2019-12-16"
 tech:
   - "NodeJS"
   - "TypeScript"

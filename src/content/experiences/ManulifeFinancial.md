@@ -9,8 +9,8 @@ positions:
       - "Developed insurance calculation interfaces with React and Redux, to hook into back-end calculation services."
       - "Implemented simple API endpoints for a .NET Core web app to receive users' insurance data and trigger financial calculations."
     duration:
-      start: "2020-04-26"
-      end: "2022-08-31"
+      start: "2019-01-03"
+      end: "2019-04-26"
 tech:
   - "React"
   - "DotNet"

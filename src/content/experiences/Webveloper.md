@@ -10,7 +10,7 @@ positions:
       - "Reduced dev server build time from ~30s to ~10s by implementing hot module reloading with custom webpack config."
     duration:
       start: "2020-04-26"
-      end: "2022-08-31"
+      end: "2020-08-31"
 tech:
   - "React"
   - "NodeJS"

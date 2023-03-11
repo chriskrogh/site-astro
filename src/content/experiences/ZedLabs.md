@@ -4,12 +4,6 @@ image: /assets/tiles/Zed.png
 link: https://www.zed.io/
 location: Port of Spain, TT
 positions:
-  - title: "Technical Advisor"
-    achievements:
-      - "Advise on architectural decisions and technical strategy for the Wam product"
-    duration:
-      start: "2022-08-01"
-      end: "2023-01-01"
   - title: "Software Engineer"
     achievements:
       - "Migrated from Firebase to an Apollo server to support typed GraphQL requests for authentication and wallet transactions."
