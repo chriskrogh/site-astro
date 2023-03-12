@@ -43,11 +43,6 @@ export const image = style({
   },
 });
 
-export const infoContainer = style([
-  sprinkles({
-    padding: "2x",
-  }),
-  {
-    textDecoration: "none",
-  },
-]);
+export const infoContainer = sprinkles({
+  padding: "2x",
+});

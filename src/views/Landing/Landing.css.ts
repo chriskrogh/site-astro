@@ -18,7 +18,7 @@ export const heroContainer = style([
 ]);
 
 export const profilePicture = style({
-  borderRadius: "50%",
+  borderRadius: 16,
 });
 
 export const titleText = style({
