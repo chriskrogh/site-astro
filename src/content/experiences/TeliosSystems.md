@@ -12,9 +12,7 @@ positions:
       start: "2018-05-5"
       end: "2018-08-25"
 tech:
-  - "DotNet"
+  - ".NET"
   - "Azure"
   - "C#"
 ---
-
-Hello there

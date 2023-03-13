@@ -6,9 +6,9 @@ location: Port of Spain, TT
 positions:
   - title: "Software Engineer"
     achievements:
+      - "Implemented point-of-sale and employee management features for merchants to manage e-money payments."
       - "Migrated from Firebase to an Apollo server to support typed GraphQL requests for authentication and wallet transactions."
       - "Configured CICD using GitHub Actions and Docker to build and deploy our server to a staging environment."
-      - "Implemented point of sale transaction and employee management features for merchants to manage e-money payments."
     duration:
       start: "2022-01-13"
       end: "2022-07-31"
@@ -19,11 +19,8 @@ tech:
   - "Apollo"
   - "GraphQL"
   - "Express"
-  - "PostgreSQL"
+  - "Postgres"
   - "Docker"
-  - "GitHub Actions"
-  - "Google Cloud Platform"
+  - "GCP"
   - "TypeScript"
 ---
-
-Hello there

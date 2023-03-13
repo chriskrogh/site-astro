@@ -17,5 +17,3 @@ tech:
   - "TypeScript"
   - "Java"
 ---
-
-Hello there

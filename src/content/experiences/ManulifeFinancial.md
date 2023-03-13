@@ -13,9 +13,7 @@ positions:
       end: "2019-04-26"
 tech:
   - "React"
-  - "DotNet"
+  - ".NET"
   - "JavaScript"
   - "C#"
 ---
-
-Hello there

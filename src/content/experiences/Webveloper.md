@@ -16,5 +16,3 @@ tech:
   - "NodeJS"
   - "TypeScript"
 ---
-
-Hello there
