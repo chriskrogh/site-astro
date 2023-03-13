@@ -1,5 +1,7 @@
 import { defineCollection, z } from "astro:content";
 
+import { TECHNOLOGIES } from "../utils/tech";
+
 const experiences = defineCollection({
   schema: z.object({
     title: z.string(),
@@ -16,7 +18,7 @@ const experiences = defineCollection({
         }),
       }),
     ),
-    tech: z.array(z.string()),
+    tech: z.array(z.enum(TECHNOLOGIES)),
   }),
 });
 

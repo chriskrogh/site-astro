@@ -20,7 +20,7 @@ globalStyle("body", {
   },
 });
 
-globalStyle("h1, h2, h3, h4, h5, p", {
+globalStyle("h1, h2, h3, h4, h5, p, li", {
   margin: 0,
   "@media": {
     "(prefers-color-scheme: light)": {
@@ -57,7 +57,7 @@ globalStyle("h5", {
   fontSize: 22,
 });
 
-globalStyle("p", {
+globalStyle("p, li", {
   fontFamily: "Jost",
   fontSize: 18,
 });

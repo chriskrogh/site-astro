@@ -1,0 +1,68 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { Icon } from "astro-icon";
+import format from "date-fns/format";
+
+import Layout from "../../layouts/Layout.astro";
+import { sprinkles } from "../../styles/sprinkles.css";
+import { TECH_INFO } from "../../utils/tech";
+
+import * as styles from "./Experience.css";
+
+export type Props = {
+  data: CollectionEntry<"experiences">["data"];
+};
+
+const { data } = Astro.props;
+---
+
+<Layout title={`Chris | ${data.title}`}>
+  <div class={styles.topSectionContainer}>
+    <img
+      src={data.image}
+      alt={data.title}
+      class={styles.image}
+      width={styles.IMAGE_SIZE}
+      height={styles.IMAGE_SIZE}
+    />
+
+    <div class={sprinkles({ minHeight: "3x", minWidth: "4x" })}></div>
+
+    <div>
+      <a href={data.link} class={styles.titleLink}>
+        <h1>{data.title}</h1>
+      </a>
+      <div class={sprinkles({ minHeight: "3x" })}></div>
+      {
+        data.positions.map((position) => (
+          <div>
+            <h3>{position.title}</h3>
+            <p>
+              {format(new Date(position.duration.start), "MMMM, yyy")} -{" "}
+              {position.duration.end
+                ? format(new Date(position.duration.end), "MMMM, yyy")
+                : "Present"}
+            </p>
+            <ul>
+              {position.achievements.map((achievement) => (
+                <li>{achievement}</li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+      <div class={sprinkles({ minHeight: "3x" })}></div>
+      <div class={styles.iconContainer}>
+        {
+          data.tech.map((tech) => (
+            <a href={TECH_INFO[tech].link} class={styles.iconLink}>
+              <Icon name={TECH_INFO[tech].icon} size={32} />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+  <div class={sprinkles({ minHeight: "3x" })}></div>
+  <slot />
+</Layout>
