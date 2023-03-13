@@ -5,6 +5,7 @@ link: https://www.teleios-systems.com/
 location: Port of Spain, TT
 positions:
   - title: "Software Developer Co-Op"
+    employment-type: Internship
     achievements:
       - "Developed a Bank Teller bot using Microsoft Bot Framework that featured handoff to humans and Microsoft's NLU service."
       - "Automated VM creation from snapshots to recover from possible downtime."

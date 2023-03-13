@@ -5,6 +5,7 @@ link: https://intuit.com/
 location: Mississauga, ON
 positions:
   - title: "Software Engineer Co-Op"
+    employment-type: Internship
     achievements:
       - "Implemented new pages in TurboTax using object-oriented Java with 100% diff coverage on unit tests."
       - "Reduced TurboTax build time by 45% by parallelizing Typescript compilation with Gulp, saving teammates 40 hours/year."

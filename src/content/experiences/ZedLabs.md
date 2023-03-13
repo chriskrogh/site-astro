@@ -5,6 +5,7 @@ link: https://www.zed.io/
 location: Port of Spain, TT
 positions:
   - title: "Software Engineer"
+    employment-type: Internship
     achievements:
       - "Implemented point-of-sale and employee management features for merchants to manage e-money payments."
       - "Migrated from Firebase to an Apollo server to support typed GraphQL requests for authentication and wallet transactions."

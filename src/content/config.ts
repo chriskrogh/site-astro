@@ -11,6 +11,12 @@ const experiences = defineCollection({
     positions: z.array(
       z.object({
         title: z.string(),
+        "employment-type": z.enum([
+          "Full-time",
+          "Part-time",
+          "Contract",
+          "Internship",
+        ]),
         achievements: z.array(z.string()),
         duration: z.object({
           start: z.string(),

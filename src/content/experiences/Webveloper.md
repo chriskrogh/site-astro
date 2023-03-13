@@ -5,6 +5,7 @@ link: https://webveloper.com/
 location: Remote
 positions:
   - title: "Software Engineer Co-Op"
+    employment-type: Internship
     achievements:
       - "Implemented performant UI components using memoization to provide a snappy website editor experience."
       - "Reduced dev server build time from ~30s to ~10s by implementing hot module reloading with custom webpack config."
