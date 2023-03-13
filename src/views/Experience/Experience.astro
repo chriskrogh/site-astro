@@ -32,12 +32,17 @@ const { data } = Astro.props;
       <a href={data.link} class={styles.titleLink}>
         <h1>{data.title}</h1>
       </a>
+      <h5>{data.location}</h5>
+
       <div class={sprinkles({ minHeight: "3x" })}></div>
+
+      <!-- Positions -->
       {
         data.positions.map((position) => (
           <div>
             <h3>{position.title}</h3>
             <p>
+              <i>{position["employment-type"]}</i> |{" "}
               {format(new Date(position.duration.start), "MMMM, yyy")} -{" "}
               {position.duration.end
                 ? format(new Date(position.duration.end), "MMMM, yyy")
@@ -51,7 +56,10 @@ const { data } = Astro.props;
           </div>
         ))
       }
+
       <div class={sprinkles({ minHeight: "3x" })}></div>
+
+      <!-- Tech Stack -->
       <div class={styles.iconContainer}>
         {
           data.tech.map((tech) => (

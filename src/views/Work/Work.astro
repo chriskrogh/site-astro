@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 
 import Layout from "../../layouts/Layout.astro";
+import { sprinkles } from "../../styles/sprinkles.css";
 import ExperienceCard from "./ExperienceCard/ExperienceCard.astro";
 import { getMostRecentPosition } from "./utils";
 
@@ -20,6 +21,7 @@ const experiences = (await getCollection("experiences")).sort((a, b) => {
 ---
 
 <Layout title="Chris' Work">
+  <h3>Experience</h3>
   <div class={styles.container}>
     {experiences.map((experience) => <ExperienceCard {...experience} />)}
   </div>
