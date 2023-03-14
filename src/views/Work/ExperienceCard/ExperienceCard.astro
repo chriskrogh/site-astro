@@ -18,7 +18,7 @@ const mostRecentPosition = positions.sort(
 )[0];
 ---
 
-<a class={styles.container} href={`/work/experiences/${slug}`}>
+<a class={styles.container} href={`/work/${slug}`}>
   <img class={styles.image} src={image} alt={`${title} logo`} />
   <div class={styles.infoContainer}>
     <h4>{title}</h4>
@@ -26,13 +26,3 @@ const mostRecentPosition = positions.sort(
     <p>{location}</p>
   </div>
 </a>
-
-<style is:inline>
-  a,
-  a:hover,
-  a:visited,
-  a:link,
-  a:active {
-    text-decoration: none;
-  }
-</style>

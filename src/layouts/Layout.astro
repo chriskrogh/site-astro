@@ -1,6 +1,7 @@
 ---
 import { sprinkles } from "../styles/sprinkles.css";
 
+import { Header } from "./Header/Header";
 import * as styles from "./Layout.css";
 
 export type Props = {
@@ -40,6 +41,11 @@ const contentContainerStyles =
   </script>
   <body>
     <main class={styles.container}>
+      <!-- Header -->
+      <div class={styles.header}>
+        <Header client:load />
+      </div>
+      <!-- Content -->
       <div class={contentContainerStyles}>
         <slot />
       </div>
@@ -57,4 +63,14 @@ const contentContainerStyles =
 
 <style is:global>
   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Jost:wght@300&display=swap");
+</style>
+
+<style is:global>
+  a,
+  a:hover,
+  a:visited,
+  a:link,
+  a:active {
+    text-decoration: none;
+  }
 </style>

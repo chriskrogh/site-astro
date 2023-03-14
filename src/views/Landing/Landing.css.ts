@@ -18,7 +18,16 @@ export const heroContainer = style([
 ]);
 
 export const profilePicture = style({
-  borderRadius: 16,
+  borderRadius: "50%",
+});
+
+export const intro = sprinkles({
+  display: "flex",
+  flexDirection: "column",
+  alignItems: {
+    mobile: "center",
+    tablet: "normal",
+  },
 });
 
 export const titleText = style({
@@ -108,9 +117,9 @@ export const linkText = style([
   hover,
 ]);
 
-export const CONTENT_SIZE = 340;
+export const IMAGE_SIZE = 180;
 
 export const spotifyCard = style({
-  width: CONTENT_SIZE,
+  width: 340,
   height: 80,
 });

@@ -13,14 +13,14 @@ import * as styles from "./Landing.css";
     <img
       class={styles.profilePicture}
       src="/assets/pro_pic.png"
-      width={styles.CONTENT_SIZE}
-      height={styles.CONTENT_SIZE}
+      width={styles.IMAGE_SIZE}
+      height={styles.IMAGE_SIZE}
       alt="Chris Krogh"
     />
 
     <div class={sprinkles({ minHeight: "3x", minWidth: "4x" })}></div>
 
-    <div>
+    <div class={styles.intro}>
       <!-- Intro -->
       <h1 class={styles.titleText}>Hi there!</h1>
       <div class={sprinkles({ minHeight: "3x" })}></div>
@@ -32,37 +32,44 @@ import * as styles from "./Landing.css";
 
       <!-- Contact Info -->
       <div class={styles.contactContainer}>
-        <a href="https://twitter.com/chriskrogh_" aria-label="Twitter">
+        <a
+          href="https://twitter.com/chriskrogh_"
+          aria-label="Twitter"
+          target="_blank"
+        >
           <Icon name="mdi:twitter" class={styles.icon} />
         </a>
         <div class={sprinkles({ width: "2x" })}></div>
         <a
           href="https://www.linkedin.com/in/christopherkrogh/"
           aria-label="LinkedIn"
+          target="_blank"
         >
           <Icon name="mdi:linkedin" class={styles.icon} />
         </a>
         <div class={sprinkles({ width: "2x" })}></div>
-        <a href="https://github.com/chriskrogh" aria-label="GitHub">
+        <a
+          href="https://github.com/chriskrogh"
+          aria-label="GitHub"
+          target="_blank"
+        >
           <Icon name="mdi:github" class={styles.icon} />
         </a>
         <div class={sprinkles({ width: "2x" })}></div>
-        <a href="mailto:chris.krogh@outlook.com" aria-label="Email">
+        <a
+          href="mailto:chris.krogh@outlook.com"
+          aria-label="Email"
+          target="_blank"
+        >
           <Icon name="mdi:email" class={styles.icon} />
         </a>
         <div class={sprinkles({ width: "2x" })}></div>
-        <a href="https://vsco.co/chriskrogh-/gallery" aria-label="VSCO">
+        <a
+          href="https://vsco.co/chriskrogh-/gallery"
+          aria-label="VSCO"
+          target="_blank"
+        >
           <Icon name="simple-icons:vsco" class={styles.icon} />
-        </a>
-      </div>
-
-      <div class={sprinkles({ minHeight: { mobile: "5x", tablet: "3x" } })}>
-      </div>
-
-      <!-- Work -->
-      <div class={styles.workWrapper}>
-        <a class={styles.linkText} href="/work">
-          <p>What I'm working on</p>
         </a>
       </div>
     </div>
@@ -78,7 +85,7 @@ import * as styles from "./Landing.css";
       title="Spotify"
       style="border-radius:12px"
       src="https://open.spotify.com/embed/playlist/7IH26z52TBOkQY4XDx66KI?utm_source=generator&theme=0"
-      width={styles.CONTENT_SIZE}
+      width={340}
       height="80"
       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
       loading="lazy"></iframe>

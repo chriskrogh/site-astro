@@ -22,6 +22,34 @@ export const container = style([
   },
 ]);
 
+export const header = style([
+  sprinkles({ paddingTop: "2x" }),
+  {
+    display: "flex",
+    justifyContent: "center",
+    width: "100%",
+  },
+]);
+
+export const headerLink = style([
+  sprinkles({ paddingX: "1x" }),
+  {
+    "@media": {
+      "(prefers-color-scheme: light)": {
+        ":hover": {
+          background: "rgba(0, 0, 0, 0.1)",
+        },
+      },
+      "(prefers-color-scheme: dark)": {
+        ":hover": {
+          background: "rgba(255, 255, 255, 0.2)",
+        },
+      },
+    },
+    borderRadius: 8,
+  },
+]);
+
 const contentContainerPadding: Sprinkles["padding"] = {
   mobile: "2x",
   desktop: "5x",

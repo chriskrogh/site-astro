@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import Experience from "../../../views/Experience/Experience.astro";
+import Experience from "../../views/Experience/Experience.astro";
 
 export async function getStaticPaths() {
   const experiences = await getCollection("experiences");

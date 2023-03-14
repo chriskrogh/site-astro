@@ -12,14 +12,18 @@
   },
   "dependencies": {
     "@astrojs/partytown": "^1.0.3",
-    "@astrojs/react": "^2.0.2",
+    "@astrojs/react": "^2.1.0",
     "@vanilla-extract/sprinkles": "^1.5.1",
     "astro": "^2.0.9",
     "astro-icon": "^0.8.0",
     "astro-vanilla-extract": "^2.0.0",
-    "date-fns": "^2.29.3"
+    "date-fns": "^2.29.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "^5.48.2",
     "eslint": "^8.32.0",

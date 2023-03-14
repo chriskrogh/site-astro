@@ -34,6 +34,11 @@ export const titleLink = style({
   },
 });
 
+export const contentContainer = style({
+  display: "flex",
+  flexDirection: "column",
+});
+
 export const ICON_SIZE = 32;
 
 export const iconContainer = style({

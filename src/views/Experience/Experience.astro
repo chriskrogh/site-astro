@@ -28,7 +28,7 @@ const { data } = Astro.props;
 
     <div class={sprinkles({ minHeight: "3x", minWidth: "4x" })}></div>
 
-    <div>
+    <div class={styles.contentContainer}>
       <a href={data.link} class={styles.titleLink}>
         <h1>{data.title}</h1>
       </a>
@@ -39,7 +39,7 @@ const { data } = Astro.props;
       <!-- Positions -->
       {
         data.positions.map((position) => (
-          <div>
+          <>
             <h3>{position.title}</h3>
             <p>
               <i>{position["employment-type"]}</i> |{" "}
@@ -53,7 +53,7 @@ const { data } = Astro.props;
                 <li>{achievement}</li>
               ))}
             </ul>
-          </div>
+          </>
         ))
       }
 

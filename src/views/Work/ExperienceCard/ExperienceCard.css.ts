@@ -44,5 +44,7 @@ export const image = style({
 });
 
 export const infoContainer = sprinkles({
+  display: "flex",
+  flexDirection: "column",
   padding: "2x",
 });
