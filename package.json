@@ -11,26 +11,26 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/partytown": "^1.0.3",
-    "@astrojs/react": "^2.1.0",
-    "@vanilla-extract/sprinkles": "^1.5.1",
-    "astro": "^2.0.9",
-    "astro-icon": "^0.8.0",
-    "astro-vanilla-extract": "^2.0.0",
-    "date-fns": "^2.29.3",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "@astrojs/partytown": "^1.2.3",
+    "@astrojs/react": "^2.2.1",
+    "@vanilla-extract/sprinkles": "^1.6.1",
+    "astro": "^2.10.7",
+    "astro-icon": "^0.8.1",
+    "astro-vanilla-extract": "^2.2.0",
+    "date-fns": "^2.30.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
-    "@typescript-eslint/eslint-plugin": "^5.48.2",
-    "@typescript-eslint/parser": "^5.48.2",
-    "eslint": "^8.32.0",
-    "eslint-config-next": "^13.1.4",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-simple-import-sort": "^9.0.0",
-    "prettier": "^2.8.3"
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "eslint": "^8.47.0",
+    "eslint-config-next": "^13.4.13",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^3.0.1"
   }
 }
