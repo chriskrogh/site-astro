@@ -3,6 +3,7 @@ import { defineCollection, z } from "astro:content";
 import { TECHNOLOGIES } from "../utils/tech";
 
 const experiences = defineCollection({
+  type: "content",
   schema: z.object({
     title: z.string(),
     image: z.string(),
@@ -28,6 +29,21 @@ const experiences = defineCollection({
   }),
 });
 
+const projects = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    image: z.string(),
+    link: z.string().optional(),
+    gitHub: z.string().optional(),
+    figma: z.string().optional(),
+    outcomes: z.array(z.string()),
+    date: z.string(),
+    tech: z.array(z.enum(TECHNOLOGIES)),
+  }),
+});
+
 export const collections = {
   experiences,
+  projects,
 };

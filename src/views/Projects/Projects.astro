@@ -1,0 +1,16 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "../../layouts/Layout.astro";
+import ProjectCard from "./ProjectCard/ProjectCard.astro";
+
+import * as styles from "./Projects.css";
+
+const projects = await getCollection("projects");
+---
+
+<Layout title="Chris' Projects">
+  <div class={styles.container}>
+    {projects.map((project) => <ProjectCard {...project} />)}
+  </div>
+</Layout>

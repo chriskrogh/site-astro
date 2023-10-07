@@ -218,6 +218,78 @@ declare module 'astro:content' {
   data: InferEntrySchema<"experiences">
 } & { render(): Render[".md"] };
 };
+"projects": {
+"ACS.md": {
+	id: "ACS.md";
+  slug: "acs";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+"AnotherNoteApp.md": {
+	id: "AnotherNoteApp.md";
+  slug: "anothernoteapp";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+"Caribto.md": {
+	id: "Caribto.md";
+  slug: "caribto";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+"Colorz.md": {
+	id: "Colorz.md";
+  slug: "colorz";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+"DevNotes.md": {
+	id: "DevNotes.md";
+  slug: "devnotes";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+"Finder.md": {
+	id: "Finder.md";
+  slug: "finder";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+"SocketChat.md": {
+	id: "SocketChat.md";
+  slug: "socketchat";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+"SongStats.md": {
+	id: "SongStats.md";
+  slug: "songstats";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+"Vings.md": {
+	id: "Vings.md";
+  slug: "vings";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+"VoiceJournal.md": {
+	id: "VoiceJournal.md";
+  slug: "voicejournal";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+};
 
 	};
 
