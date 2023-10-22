@@ -9,12 +9,16 @@ export type Props = {
 };
 
 const { data, slug } = Astro.props;
-const { title, image } = data;
+const { title, image, description, date } = data;
+
+const year = new Date(date).getFullYear();
 ---
 
 <a class={styles.container} href={`/project/${slug}`}>
   <img class={styles.image} src={image} alt={`${title} logo`} />
   <div class={styles.infoContainer}>
     <h4>{title}</h4>
+    <p class={styles.description}>{description}</p>
+    <p>{year}</p>
   </div>
 </a>

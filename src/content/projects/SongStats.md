@@ -1,5 +1,6 @@
 ---
 title: "Song Stats"
+description: "Build playlists using Spotify APIs"
 image: /assets/tiles/SongStats.png
 gitHub: https://github.com/Dimatsa/cs348-database
 outcomes:

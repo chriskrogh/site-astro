@@ -1,5 +1,6 @@
 ---
-title: "Another Note App"
+title: "Quick Notes"
+description: "Built with React & Relay"
 image: /assets/tiles/AnotherNoteApp.png
 gitHub: https://github.com/chriskrogh/another-note-app
 outcomes:

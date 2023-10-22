@@ -48,3 +48,12 @@ export const infoContainer = sprinkles({
   flexDirection: "column",
   padding: "2x",
 });
+
+export const description = style({
+  display: "-webkit-box",
+  WebkitLineClamp: 2,
+  WebkitBoxOrient: "vertical",
+  height: 52,
+  overflow: "hidden",
+  textOverflow: "ellipsis",
+});

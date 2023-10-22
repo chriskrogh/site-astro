@@ -1,5 +1,6 @@
 ---
 title: "Finder"
+description: "Monitor the location of close friends"
 image: /assets/tiles/Finder.png
 figma: https://www.figma.com/file/pthaSVKKuRli2TGAi3l2JR/MVP?node-id=6%3A159
 outcomes:

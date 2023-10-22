@@ -1,5 +1,6 @@
 ---
 title: "devnotes"
+description: "Built with Kotlin & vanilla JS"
 image: /assets/tiles/AnotherNoteApp.png
 outcomes:
   - "Built a note app for software engineers using Kotlin that stores notes in a PostgreSQL database."

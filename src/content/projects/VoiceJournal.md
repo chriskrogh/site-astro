@@ -1,5 +1,6 @@
 ---
 title: "Voice Journal"
+description: "NLP-powered journaling"
 image: /assets/tiles/VoiceJournal.png
 gitHub: https://github.com/cs446-software-design-architecture/app
 figma: https://www.figma.com/file/FgGQL83PXAF6aDlG6DGxwi/V1?node-id=10%3A114

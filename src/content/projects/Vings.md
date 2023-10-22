@@ -1,5 +1,6 @@
 ---
 title: "Vings"
+description: "Track expenses in multiple currencies"
 image: /assets/tiles/Vings.png
 gitHub: https://github.com/chriskrogh/Vings
 outcomes:

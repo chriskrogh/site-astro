@@ -1,5 +1,6 @@
 ---
 title: "Caribto"
+description: "Crypto | Fiat Ramp for the Caribbean"
 image: /assets/tiles/Caribto.png
 link: https://caribto.com
 gitHub: https://github.com/chriskrogh/caribto

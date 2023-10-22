@@ -1,5 +1,6 @@
 ---
 title: "Colorz"
+description: "Mint colors on the blockchain"
 image: /assets/tiles/Colorz.png
 link: https://colorz-chi.vercel.app/
 gitHub: https://github.com/chriskrogh/colorz

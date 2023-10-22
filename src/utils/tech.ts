@@ -71,7 +71,7 @@ export const TECH_INFO: Record<(typeof TECHNOLOGIES)[number], TechInfo> = {
     link: "https://www.w3.org/TR/CSS/#css",
   },
   ["Chai"]: {
-    icon: "mdi:chai",
+    icon: "simple-icons:chai",
     link: "https://www.chaijs.com/",
   },
   ["Cypress"]: {
@@ -87,7 +87,7 @@ export const TECH_INFO: Record<(typeof TECHNOLOGIES)[number], TechInfo> = {
     link: "https://dotnet.microsoft.com/",
   },
   ["Ethers"]: {
-    icon: "mdi:ethers",
+    icon: "logos:ethers",
     link: "https://docs.ethers.io/",
   },
   ["Express"]: {
@@ -107,7 +107,7 @@ export const TECH_INFO: Record<(typeof TECHNOLOGIES)[number], TechInfo> = {
     link: "https://graphql.org/",
   },
   ["Hardhat"]: {
-    icon: "mdi:hardhat",
+    icon: "logos:hardhat-icon",
     link: "https://hardhat.org/",
   },
   ["HTML"]: {
@@ -143,7 +143,7 @@ export const TECH_INFO: Record<(typeof TECHNOLOGIES)[number], TechInfo> = {
     link: "https://kubernetes.io/",
   },
   ["MongoDB"]: {
-    icon: "mdi:mongodb",
+    icon: "simple-icons:mongodb",
     link: "https://www.mongodb.com/",
   },
   ["MySQL"]: {
@@ -151,7 +151,7 @@ export const TECH_INFO: Record<(typeof TECHNOLOGIES)[number], TechInfo> = {
     link: "https://www.mysql.com/",
   },
   ["NextJS"]: {
-    icon: "mdi:nextjs",
+    icon: "file-icons:nextjs",
     link: "https://nextjs.org/",
   },
   ["NodeJS"]: {
@@ -183,11 +183,11 @@ export const TECH_INFO: Record<(typeof TECHNOLOGIES)[number], TechInfo> = {
     link: "https://redis.io/",
   },
   ["Relay"]: {
-    icon: "mdi:relay",
+    icon: "logos:relay",
     link: "https://relay.dev/",
   },
   ["Solidity"]: {
-    icon: "mdi:solidity",
+    icon: "simple-icons:solidity",
     link: "https://soliditylang.org/",
   },
   ["Swift"]: {

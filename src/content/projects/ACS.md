@@ -1,5 +1,6 @@
 ---
 title: "ACS"
+description: "Voting for the Association of Caribbean Students"
 image: /assets/tiles/ACS.png
 gitHub: https://github.com/uwaterlooacs/acs
 outcomes:

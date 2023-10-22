@@ -1,5 +1,6 @@
 ---
 title: "Socket Chat"
+description: "Chat over web sockets"
 image: /assets/tiles/SocketChat.png
 gitHub: https://github.com/chriskrogh/socket-chat
 outcomes:
