@@ -242,13 +242,6 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"AnotherNoteApp.md": {
-	id: "AnotherNoteApp.md";
-  slug: "anothernoteapp";
-  body: string;
-  collection: "projects";
-  data: InferEntrySchema<"projects">
-} & { render(): Render[".md"] };
 "Caribto.md": {
 	id: "Caribto.md";
   slug: "caribto";
@@ -277,6 +270,20 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
+"LifeLogs.md": {
+	id: "LifeLogs.md";
+  slug: "lifelogs";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+"QuickNotes.md": {
+	id: "QuickNotes.md";
+  slug: "quicknotes";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
 "SocketChat.md": {
 	id: "SocketChat.md";
   slug: "socketchat";
@@ -294,13 +301,6 @@ declare module 'astro:content' {
 "Vings.md": {
 	id: "Vings.md";
   slug: "vings";
-  body: string;
-  collection: "projects";
-  data: InferEntrySchema<"projects">
-} & { render(): Render[".md"] };
-"VoiceJournal.md": {
-	id: "VoiceJournal.md";
-  slug: "voicejournal";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
