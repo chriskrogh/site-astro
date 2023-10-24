@@ -7,7 +7,6 @@ outcomes:
   - "Supports markdown, syntax highlighting, search and sharing."
 date: "2022-03-12"
 tech:
-  - "Ktor"
   - "Postgres"
   - "Kotlin"
   - "HTML"

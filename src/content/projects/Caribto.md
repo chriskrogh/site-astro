@@ -13,8 +13,6 @@ date: "2021-12-16"
 tech:
   - "React"
   - "NextJS"
-  - "Ethers"
-  - "Hardhat"
   - "Chai"
   - "TypeScript"
   - "Solidity"

@@ -12,8 +12,6 @@ date: "2022-02-02"
 tech:
   - "React"
   - "NextJS"
-  - "Ethers"
-  - "Hardhat"
   - "Chai"
   - "TypeScript"
   - "Solidity"

@@ -9,19 +9,16 @@ export const TECHNOLOGIES = [
   "Cypress",
   "Docker",
   ".NET",
-  "Ethers",
   "Express",
   "Figma",
   "GCP",
   "GraphQL",
-  "Hardhat",
   "HTML",
   "Ionic",
   "Java",
   "JavaScript",
   "Jest",
   "Kotlin",
-  "Ktor",
   "Kubernetes",
   "MongoDB",
   "MySQL",
@@ -67,7 +64,7 @@ export const TECH_INFO: Record<(typeof TECHNOLOGIES)[number], TechInfo> = {
     link: "https://github.com/dotnet/csharplang",
   },
   ["CSS"]: {
-    icon: "mdi:css-3",
+    icon: "mdi:language-css3",
     link: "https://www.w3.org/TR/CSS/#css",
   },
   ["Chai"]: {
@@ -86,10 +83,6 @@ export const TECH_INFO: Record<(typeof TECHNOLOGIES)[number], TechInfo> = {
     icon: "simple-icons:dotnet",
     link: "https://dotnet.microsoft.com/",
   },
-  ["Ethers"]: {
-    icon: "logos:ethers",
-    link: "https://docs.ethers.io/",
-  },
   ["Express"]: {
     icon: "simple-icons:express",
     link: "http://expressjs.com/",
@@ -106,12 +99,8 @@ export const TECH_INFO: Record<(typeof TECHNOLOGIES)[number], TechInfo> = {
     icon: "mdi:graphql",
     link: "https://graphql.org/",
   },
-  ["Hardhat"]: {
-    icon: "logos:hardhat-icon",
-    link: "https://hardhat.org/",
-  },
   ["HTML"]: {
-    icon: "mdi:html-5",
+    icon: "mdi:language-html5",
     link: "https://html.com/html5/",
   },
   ["Ionic"]: {
@@ -134,10 +123,6 @@ export const TECH_INFO: Record<(typeof TECHNOLOGIES)[number], TechInfo> = {
     icon: "mdi:kotlin",
     link: "https://kotlinlang.org/",
   },
-  ["Ktor"]: {
-    icon: "mdi:ktor",
-    link: "https://ktor.io/",
-  },
   ["Kubernetes"]: {
     icon: "mdi:kubernetes",
     link: "https://kubernetes.io/",
@@ -147,7 +132,7 @@ export const TECH_INFO: Record<(typeof TECHNOLOGIES)[number], TechInfo> = {
     link: "https://www.mongodb.com/",
   },
   ["MySQL"]: {
-    icon: "mdi:mysql",
+    icon: "simple-icons:mysql",
     link: "https://www.mysql.com/",
   },
   ["NextJS"]: {
@@ -191,7 +176,7 @@ export const TECH_INFO: Record<(typeof TECHNOLOGIES)[number], TechInfo> = {
     link: "https://soliditylang.org/",
   },
   ["Swift"]: {
-    icon: "mdi:swift",
+    icon: "simple-icons:swift",
     link: "https://developer.apple.com/swift/",
   },
   ["Travis CI"]: {

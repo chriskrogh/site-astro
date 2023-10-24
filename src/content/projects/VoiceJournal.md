@@ -1,5 +1,5 @@
 ---
-title: "Voice Journal"
+title: "Life Logs"
 description: "NLP-powered journaling"
 image: /assets/tiles/VoiceJournal.png
 gitHub: https://github.com/cs446-software-design-architecture/app
