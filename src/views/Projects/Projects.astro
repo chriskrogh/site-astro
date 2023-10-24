@@ -7,6 +7,7 @@ import ProjectCard from "./ProjectCard/ProjectCard.astro";
 import * as styles from "./Projects.css";
 
 const projects = await getCollection("projects");
+projects.sort((a, b) => new Date(b.data.date).getFullYear() - new Date(a.data.date).getFullYear());
 ---
 
 <Layout title="Chris' Projects">
