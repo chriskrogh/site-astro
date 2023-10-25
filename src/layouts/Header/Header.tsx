@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 
 import * as styles from "./Header.css";
 import {
-  type PathClassNames,
   INITIAL_CLASS_NAMES,
   PATH_NAMES,
+  type PathClassNames,
   PATHS,
 } from "./utils";
 
