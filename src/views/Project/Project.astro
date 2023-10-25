@@ -32,7 +32,25 @@ const { data } = Astro.props;
         <h1>{data.title}</h1>
       </a>
 
-      <div class={sprinkles({ minHeight: "3x" })}></div>
+      {(data.gitHub || data.figma) ? (
+        <>
+          <div class={sprinkles({ minHeight: "3x" })}></div>
+          <div class={styles.iconContainer}>
+            {data.gitHub ? (
+              <a href={data.gitHub} class={styles.iconLink}>
+                <Icon name="mdi:github" size={32} />
+              </a>
+            ) : null}
+            {data.figma ? (
+              <a href={data.figma} class={styles.iconLink}>
+                <Icon name="simple-icons:figma" size={32} />
+              </a>
+            ) : null}
+          </div>
+        </>
+      ) : null}
+
+      <div class={sprinkles({ minHeight: "2x" })}></div>
 
       <!-- Outcomes -->
       <ul>
