@@ -9,19 +9,16 @@ export const TECHNOLOGIES = [
   "Cypress",
   "Docker",
   ".NET",
-  "Ethers",
   "Express",
   "Figma",
   "GCP",
   "GraphQL",
-  "Hardhat",
   "HTML",
   "Ionic",
   "Java",
   "JavaScript",
   "Jest",
   "Kotlin",
-  "Ktor",
   "Kubernetes",
   "MongoDB",
   "MySQL",
@@ -67,11 +64,11 @@ export const TECH_INFO: Record<(typeof TECHNOLOGIES)[number], TechInfo> = {
     link: "https://github.com/dotnet/csharplang",
   },
   ["CSS"]: {
-    icon: "mdi:css-3",
+    icon: "mdi:language-css3",
     link: "https://www.w3.org/TR/CSS/#css",
   },
   ["Chai"]: {
-    icon: "mdi:chai",
+    icon: "simple-icons:chai",
     link: "https://www.chaijs.com/",
   },
   ["Cypress"]: {
@@ -85,10 +82,6 @@ export const TECH_INFO: Record<(typeof TECHNOLOGIES)[number], TechInfo> = {
   [".NET"]: {
     icon: "simple-icons:dotnet",
     link: "https://dotnet.microsoft.com/",
-  },
-  ["Ethers"]: {
-    icon: "mdi:ethers",
-    link: "https://docs.ethers.io/",
   },
   ["Express"]: {
     icon: "simple-icons:express",
@@ -106,12 +99,8 @@ export const TECH_INFO: Record<(typeof TECHNOLOGIES)[number], TechInfo> = {
     icon: "mdi:graphql",
     link: "https://graphql.org/",
   },
-  ["Hardhat"]: {
-    icon: "mdi:hardhat",
-    link: "https://hardhat.org/",
-  },
   ["HTML"]: {
-    icon: "mdi:html-5",
+    icon: "mdi:language-html5",
     link: "https://html.com/html5/",
   },
   ["Ionic"]: {
@@ -134,24 +123,20 @@ export const TECH_INFO: Record<(typeof TECHNOLOGIES)[number], TechInfo> = {
     icon: "mdi:kotlin",
     link: "https://kotlinlang.org/",
   },
-  ["Ktor"]: {
-    icon: "mdi:ktor",
-    link: "https://ktor.io/",
-  },
   ["Kubernetes"]: {
     icon: "mdi:kubernetes",
     link: "https://kubernetes.io/",
   },
   ["MongoDB"]: {
-    icon: "mdi:mongodb",
+    icon: "simple-icons:mongodb",
     link: "https://www.mongodb.com/",
   },
   ["MySQL"]: {
-    icon: "mdi:mysql",
+    icon: "simple-icons:mysql",
     link: "https://www.mysql.com/",
   },
   ["NextJS"]: {
-    icon: "mdi:nextjs",
+    icon: "file-icons:nextjs",
     link: "https://nextjs.org/",
   },
   ["NodeJS"]: {
@@ -183,15 +168,15 @@ export const TECH_INFO: Record<(typeof TECHNOLOGIES)[number], TechInfo> = {
     link: "https://redis.io/",
   },
   ["Relay"]: {
-    icon: "mdi:relay",
+    icon: "logos:relay",
     link: "https://relay.dev/",
   },
   ["Solidity"]: {
-    icon: "mdi:solidity",
+    icon: "simple-icons:solidity",
     link: "https://soliditylang.org/",
   },
   ["Swift"]: {
-    icon: "mdi:swift",
+    icon: "simple-icons:swift",
     link: "https://developer.apple.com/swift/",
   },
   ["Travis CI"]: {

@@ -49,7 +49,7 @@ export const infoContainer = sprinkles({
   padding: "2x",
 });
 
-export const title = style({
+export const description = style({
   display: "-webkit-box",
   WebkitLineClamp: 2,
   WebkitBoxOrient: "vertical",
